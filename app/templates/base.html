@@ -12,9 +12,26 @@
 {% endblock %}
 
 {% block content %}
-
-
-    {% block page_content %}{% endblock %}
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Flask-Skeleton</h3>
+          <ul class="nav masthead-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+	    {% block page_content %}{% endblock %}
+	  <div class="mastfoot">
+        <div class="inner">
+          <p>This template is made with <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>, and can be found on the Bootstrap example page.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
 
